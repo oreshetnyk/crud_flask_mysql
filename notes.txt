@@ -1,0 +1,12 @@
+1. git add .
+2. git commit -m 'Add note here!'
+3. git push  # push to GitHub
+
+
+Database migration:
+1. pip install Flask-Migrate
+2. from flask_migrate import Migrate  # Add this in app.py file
+3. migrate = Migrate(app, db)  # Add this in app.py file
+4. flask db init  # type this in venv terminal 
+5. flask db migrate -m 'Add notes here!'
+5. flask db upgrade
